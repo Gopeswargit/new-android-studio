@@ -1,0 +1,15 @@
+{
+  "name": "Android Studio with VNC and OpenGL ES",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "vscode",
+  "forwardPorts": [5901, 8081], // VNC port and custom web service port
+  "postCreateCommand": "bash setup.sh",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {
+      "version": "latest"
+    }
+  }
+}
+
